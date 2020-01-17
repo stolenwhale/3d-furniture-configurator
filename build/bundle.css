@@ -1,0 +1,4 @@
+body{margin:0;padding:0}.configurator{display:-webkit-box;display:-ms-flexbox;display:flex}.configurator .options{border-left:1px solid #77777738}.configurator .options .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:20px}.configurator .options .card:not(:last-child){border-bottom:1px solid #00000029}.configurator .options .card h2{font-size:20px}.configurator .options .card span{font-size:17px;margin-bottom:5px}.configurator .options .card select{margin-bottom:15px}
+
+
+/*# sourceMappingURL=bundle.css.map*/

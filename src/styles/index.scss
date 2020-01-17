@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.configurator {
+  display: flex;
+  .options {
+    border-left: 1px solid #77777738;
+    .card {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      &:not(:last-child) {
+        border-bottom: 1px solid #00000029;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      span {
+        font-size: 17px;
+        margin-bottom: 5px;
+      }
+      select {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

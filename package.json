@@ -47,7 +47,6 @@
     "autoprefixer": "^9.7.1",
     "core-js": "^3.4.0",
     "three": "^0.112.1",
-    "three-orbit-controls": "^82.1.0",
-    "three-tds-loader": "^1.1.1"
+    "three-dragger": "^1.0.1"
   }
 }
