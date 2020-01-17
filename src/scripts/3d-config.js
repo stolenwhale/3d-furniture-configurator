@@ -5,6 +5,7 @@ import { TDSLoader } from "three/examples//jsm/loaders/TDSLoader.js";
 
 let camera, scene, renderer;
 let orbit, control;
+const container = document.getElementById("canvas");
 
 init();
 window.onload = function() {
@@ -14,10 +15,10 @@ window.onload = function() {
 function init() {
   // ------------------------------------------- Рендерер ------------------------------------------- //
 
-  const container = document.getElementById("canvas");
+
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(window.innerWidth * 0.7, window.innerHeight * 0.7);
+  renderer.setSize(container.offsetWidth, container.offsetHeight);
   container.appendChild(renderer.domElement);
   renderer.toneMapping = THREE.ReinhardToneMapping;
 
@@ -29,7 +30,7 @@ function init() {
     1,
     30000
   );
-  camera.position.set(1000, 500, 1000);
+  camera.position.set(-300, 800, 700);
   camera.lookAt(0, 200, 0);
   // ------------------------------------------- Сцена ------------------------------------------- //
 
@@ -207,9 +208,8 @@ function init() {
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
-
-  renderer.setSize(window.innerWidth, window.innerHeight);
-
+  renderer.setSize(container.offsetWidth, container.offsetHeight);
+  location.reload();
   render();
 }
 

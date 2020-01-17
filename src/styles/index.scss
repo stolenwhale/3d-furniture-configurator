@@ -5,8 +5,15 @@ body {
 
 .configurator {
   display: flex;
+  height: 100%;
+
+  #canvas {
+    width: 80%;
+  }
   .options {
+    background-color: #ffffffc7;
     border-left: 1px solid #77777738;
+
     .card {
       display: flex;
       flex-direction: column;
@@ -23,6 +30,32 @@ body {
       }
       select {
         margin-bottom: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 560px) {
+    #canvas {
+      width: 100%;
+      height: 800px;
+    }
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      bottom: 0;
+      .card {
+        padding: 5px 10px;
+        h2 {
+          font-size: 16px;
+        }
+        span {
+          font-size: 14px;
+          margin-bottom: 2px;
+        }
+        select {
+          margin-bottom: 8px;
+        }
       }
     }
   }
